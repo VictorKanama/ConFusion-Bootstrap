@@ -6,7 +6,7 @@
 .row-content {
   margin: 0px auto;
   padding: 50px 0px 50px 0px;
-  border-bottom: 1px ridge;
+  border-bottom: 1px ridge grey;
   min-height: 400px;
 }
 
@@ -36,4 +36,11 @@ body {
 
 .navbar-dark {
   background-color: #512da8;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
 }
