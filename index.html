@@ -9,17 +9,17 @@
 
     <!-- Bootstrap CSS -->
     <link
-            rel="stylesheet"
-            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link
-            rel="stylesheet"
-            href="node_modules/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
     />
     <link
-            rel="stylesheet"
-            href="node_modules/bootstrap-social/bootstrap-social.css"
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
     />
 
     <title>Ristorante Con Fusion</title>
@@ -29,42 +29,107 @@
     <nav class="navbar navbar-dark  navbar-expand-sm fixed-top">
       <div class="container">
         <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#Navbar"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand mr-auto" href="#"
-        ><img src="img/logo.png" height="30" width="41" alt=""
+          ><img src="img/logo.png" height="30" width="41" alt=""
         /></a>
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active ">
               <a class="nav-link" href="#"
-              ><span class="fa fa-home fa-lg"></span> Home</a
+                ><span class="fa fa-home fa-lg"></span> Home</a
               >
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="./aboutus.html"
-              ><span class="fa fa-info fa-lg"></span> About</a
+                ><span class="fa fa-info fa-lg"></span> About</a
               >
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="#"
-              ><span class="fa fa-list fa-lg"></span> Menu</a
+                ><span class="fa fa-list fa-lg"></span> Menu</a
               >
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="./contactus.html"
-              ><span class="fa fa-address-card fa-lg"></span> Contact</a
+                ><span class="fa fa-address-card fa-lg"></span> Contact</a
               >
             </li>
           </ul>
+          <span class="navbar-text">
+            <a data-toggle="modal" data-target="#loginModal">
+              <span class="fa fa-sign-in"></span> Login
+            </a>
+          </span>
         </div>
       </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modla-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputEmail3"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control form-control-sm mr-1"
+                    id="exampleInputEmail3"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-group col-sm-4">
+                  <label class="sr-only" for="exampleInputPassword3"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control form-control-sm mr-1"
+                    id="exampleInputPassword3"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="col-sm-auto">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-check-label"> Remember me </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm ml-auto"
+                  data-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
@@ -81,7 +146,14 @@
           </div>
 
           <div class="col-8 col-sm-3 align-self-center">
-            <a  href="#reserveForm" class="btn btn-warning btn-block btn-sm ">
+            <a
+              href="#reserveForm"
+              class="btn btn-warning btn-block btn-sm"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Or Call us at <br><strong>+852 12345678</strong>"
+              data-placement="bottom"
+            >
               Reserve Table
             </a>
           </div>
@@ -97,9 +169,9 @@
         <div class="col col-sm order-sm-first col-md">
           <div class="media">
             <img
-                    class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="img/uthappizza.png"
-                    alt="uthappizza"
+              class="d-flex mr-3 img-thumbnail align-self-center"
+              src="img/uthappizza.png"
+              alt="uthappizza"
             />
             <div class="media-body">
               <h2 class="mt-0">
@@ -134,9 +206,9 @@
               </p>
             </div>
             <img
-                    class="d-flex ml-3 img-thumbnail align-self-center"
-                    src="img/buffet.png"
-                    alt="promotion"
+              class="d-flex ml-3 img-thumbnail align-self-center"
+              src="img/buffet.png"
+              alt="promotion"
             />
           </div>
         </div>
@@ -149,9 +221,9 @@
         <div class="col col-sm order-sm-first col-md">
           <div class="media">
             <img
-                    class="d-flex mr-3 img-thumbnail align-self-center"
-                    src="img/alberto.png"
-                    alt=""
+              class="d-flex mr-3 img-thumbnail align-self-center"
+              src="img/alberto.png"
+              alt=""
             />
             <div class="media-body">
               <h2 class="mt-0">Alberto Somayya</h2>
@@ -168,69 +240,107 @@
       </div>
 
       <div class=" row row-content col-12 col-sm-8 col-sm-offset-2  ">
-
         <div class="card ">
           <h3 class="card-header text-white bg-warning">Reserve a Table</h3>
           <div class="card-body">
-
-              <form id="reserveForm" action="">
+            <form id="reserveForm" action="">
               <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Number of Guests</label>
 
-                      <label  class="col-sm-2 col-form-label">Number of Guests</label>
-
-                        <div class="col-sm-10">
-                            <div class="form-check form-check-inline">
-                          <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                          <label class="form-check-label" for="inlineRadio1">1</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                          <label class="form-check-label" for="inlineRadio2">2</label>
-                        </div>
-                        <div class="form-check form-check-inline ">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
-                          <label class="form-check-label" for="inlineRadio3">3</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" >
-                          <label class="form-check-label" for="inlineRadio4">4</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5" >
-                          <label class="form-check-label" for="inlineRadio5">5</label>
-                        </div>
-                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6" >
-                          <label class="form-check-label" for="inlineRadio6">6</label>
-                        </div>
-                        </div>
+                <div class="col-sm-10">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input "
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1">1</label>
                   </div>
-                   <div class="form-group row ">
-                        <label  class="col-sm-2 col-form-label">Date and Time</label>
-                        <div class="col-sm-4">
-                            <input type="text" id="date" class="form-control" placeholder="Date">
-                        </div>
-
-                        <div class="col-sm-4">
-                            <input type="text" id="time" class="form-control" placeholder="Time">
-                        </div>
-
-
-
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">2</label>
                   </div>
-
-                <div class="form-group row">
-                  <div class="offset-sm-2 col-sm-10">
-                    <button type="submit" class="btn btn-primary">
-                      Reserve
-                    </button>
+                  <div class="form-check form-check-inline ">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio5"
+                      value="option5"
+                    />
+                    <label class="form-check-label" for="inlineRadio5">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio6"
+                      value="option6"
+                    />
+                    <label class="form-check-label" for="inlineRadio6">6</label>
                   </div>
                 </div>
+              </div>
+              <div class="form-group row ">
+                <label class="col-sm-2 col-form-label">Date and Time</label>
+                <div class="col-sm-4">
+                  <input
+                    type="text"
+                    id="date"
+                    class="form-control"
+                    placeholder="Date"
+                  />
+                </div>
 
+                <div class="col-sm-4">
+                  <input
+                    type="text"
+                    id="time"
+                    class="form-control"
+                    placeholder="Time"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                  <button type="submit" class="btn btn-primary">
+                    Reserve
+                  </button>
+                </div>
+              </div>
             </form>
-            </div>
           </div>
-
+        </div>
       </div>
     </div>
 
@@ -261,32 +371,32 @@
           <div class="col-12 col-sm-4 align-self-center">
             <div class="text-center">
               <a
-                      class="btn btn-social-icon btn-google"
-                      href="http://google.com/+"
-              ><i class="fa fa-google-plus fa-lg"></i
+                class="btn btn-social-icon btn-google"
+                href="http://google.com/+"
+                ><i class="fa fa-google-plus fa-lg"></i
               ></a>
               <a
-                      class="btn btn-social-icon btn-facebook"
-                      href="http://www.facebook.com/profile.php?id="
-              ><i class="fa fa-facebook fa-lg"></i
+                class="btn btn-social-icon btn-facebook"
+                href="http://www.facebook.com/profile.php?id="
+                ><i class="fa fa-facebook fa-lg"></i
               ></a>
               <a
-                      class="btn btn-social-icon btn-linkedin"
-                      href="http://www.linkedin.com/in/"
-              ><i class="fa fa-linkedin fa-lg"></i
+                class="btn btn-social-icon btn-linkedin"
+                href="http://www.linkedin.com/in/"
+                ><i class="fa fa-linkedin fa-lg"></i
               ></a>
               <a
-                      class="btn btn-social-icon btn-twitter"
-                      href="http://twitter.com/"
-              ><i class="fa fa-twitter fa-lg"></i
+                class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/"
+                ><i class="fa fa-twitter fa-lg"></i
               ></a>
               <a
-                      class="btn btn-social-icon btn-youtube"
-                      href="http://youtube.com/"
-              ><i class="fa fa-youtube fa-lg"></i
+                class="btn btn-social-icon btn-youtube"
+                href="http://youtube.com/"
+                ><i class="fa fa-youtube fa-lg"></i
               ></a>
               <a class="btn btn-social-icon" href="mailto:"
-              ><i class="fa fa-envelope fa-lg"></i
+                ><i class="fa fa-envelope fa-lg"></i
               ></a>
             </div>
           </div>
@@ -302,5 +412,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
